@@ -1,6 +1,6 @@
 {
   "name": "on-the-run",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "on-the-run is a JS utils functions",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
