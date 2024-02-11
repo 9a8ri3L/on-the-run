@@ -1,0 +1,45 @@
+{
+  "name": "on-the-run",
+  "version": "0.0.0",
+  "description": "on-the-run is a JS utils functions",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "lint": "tsc",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9a8ri3L/on-the-run.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "utils",
+    "array",
+    "object",
+    "string",
+    "number",
+    "boolean"
+  ],
+  "author": "Gabriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/9a8ri3L/on-the-run/issues"
+  },
+  "homepage": "https://github.com/9a8ri3L/on-the-run#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
